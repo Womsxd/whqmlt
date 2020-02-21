@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ntcot的奇妙灵堂</title>
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/cachep2p/cachep2p.min.js"></script>
+	<script type="text/javascript" src="js/py.js"></script>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <link href="css/b.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload="ld();">
+<div id="all">
+    <div class="diantext">奠</div>
+    <div id="dian">
+        <span id="diantx">里失贤者　　典型犹存</span>
+    </div>
+    <div id="sbframe">
+        <img id="sb" src="img/sb.png" style="filter: saturate(0); transform: scale(1);">
+		<img class="lns" id="isa" src="img/a.gif" style="margin-top: -55px;">
+		<img class="lns" id="isb" src="img/b.gif" style="margin-left: 150px;">
+		<img class="lns" id="isc" src="img/c.gif" style="margin-left: 175px;">
+		<img class="lns" id="isd" src="img/d.gif" style="margin-left: 145px;margin-top: -40px;">
+		<img class="lns" id="ise" src="img/e.png" style="margin-left: 87px; margin-top: -200px; opacity: 0; transform: scale(0.3);animation :rot 0.7s linear infinite;">
+		<img class="lns" id="isf" src="img/f.gif" style="margin-left: 125px;opacity: 1;margin-top: -125px;z-index: 8;transform: scale(0.6);">
+		<img class="lns" id="isg" src="img/g.gif" style="margin-left: -100px;opacity: 1;margin-top: -173px;z-index: 8;transform: scale(0.5);">
+		<img class="lns" id="ish" src="img/h.gif" style="margin-left: 310px;opacity: 1;margin-top: -50px;z-index: 8;">
+		<img class="lns" id="isi" src="img/i.gif" style="margin-left: 113px;opacity: 1;margin-top: -145px;z-index: 8;transform: scale(0.8);">
+    </div>
+	<style>
+	@keyframes rot{
+	0%{transform: scale(0.3) rotateZ(0deg)}
+	100%{transform: scale(0.3) rotateZ(360deg)}
+	}
+	@keyframes stop{
+	0%{transform: scale(0.3)}
+	100%{transform: scale(0.3)}
+	}
+	</style>
+    <div id="leftyx">
+        <div class="lb"></div>
+        <div class="lb"></div>
+        <div class="light"></div>
+    </div>
+    <div id="rightyx">
+        <div class="lb"></div>
+        <div class="lb"></div>
+        <div class="light"></div>
+    </div>
+    <div id="btmper">
+        <audio src="music/lol.mp3" id="playera" controls loop></audio>
+        <div id="wd">
+        <p class="tx">低音</p><input type="range" id="low" min="1" max="30" value="1"/>
+        <p class="tx">高音</p><input type="range" id="high" min="1" max="30" value="1"/>
+        <p class="tx">王航灵堂蹦迪</p><a href="javascript:;" class="file">为王航选丧歌<input type="file" name="file" id="file" onchange="onInputFileChange()"></a>
+        </div>
+        <span class="lastx">Esu!™ Media Player Alpha V0.6(Mourning Hall V3.0)</span>
+	<span class="lastx" style="color: #d5ff00;text-shadow: 0px 0px 1px;">请等待加载完成(龙图不动)再点击播放,3Q (仅Chrome可正常浏览)</span>
+      	<span class="lastx" style="color: #d5ff00;text-shadow: 0px 0px 1px;">注:灵堂图片从王航空间取来,非人肉,污蔑大神死妈烂爹 (呲牙</span>
+	<span class="lastx" style="color: #d5ff00;text-shadow: 0px 0px 1px;"最近一次更新: 2018年9月16日</span>
+      	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274501693'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1274501693%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+	<span class="lastx" style="color: #d5ff00;text-shadow: 0px 0px 1px;">死妈王航的QQ号:853008288</span>
+     	<span class="lastx" style="color: #d5ff00;text-shadow: 0px 0px 1px;">vvv 感谢以下垃圾弟弟对王航的支持 vvv</span>
+      	<span class="lastx" style="color: #d5ff00;text-shadow: 0px 0px 1px;">小贱弟弟:2544673738</span>
+      	<span class="lastx" style="color: #d5ff00;text-shadow: 0px 0px 1px;">搜狗弟弟:670251068</span>
+      	<span class="lastx" style="color: #d5ff00;text-shadow: 0px 0px 1px;">f_shuai弟弟:1758129323</span>
+     	<span class="lastx" style="color: #d5ff00;text-shadow: 0px 0px 1px;">死妈垃圾机器人:3392295988</span>
+      	<span class="lastx" style="color: #d5ff00;text-shadow: 0px 0px 1px;">佳乐弟弟:1833514255</span>
+      	<span class="lastx" style="color: #d5ff00;text-shadow: 0px 0px 1px;">vvvvv 王航经典语录 vvvvv</span>
+      	<img id="yl" src="img/dai_lv_shi.png" style="transform: scale(0.65);">
+	<span class="lastx" style="color: #d5ff00;text-shadow: 0px 0px 1px;">vvvvv 灵堂留念区 欢迎评论 vvvvv</span>
+	<!-- 来必力City版安装代码 -->
+	<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTE0OS8xNTY3Ng=="><script type="text/javascript">(function(d, s) {var j, e = d.getElementsByTagName(s)[0];if (typeof LivereTower === 'function') { return; }j = d.createElement(s);j.src = 'https://cdn-city.livere.com/js/embed.dist.js';j.async = true;e.parentNode.insertBefore(j, e);})(document, 'script');</script>
+	<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+	</div>
+	<!-- City版安装代码已完成 -->
+</div>
+    </div>
+</div>
+</body>
+</html>
